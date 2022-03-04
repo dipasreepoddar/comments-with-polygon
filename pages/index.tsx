@@ -23,7 +23,7 @@ const queryClient = new QueryClient({
   queryCache: new QueryCache({
     onError: () => {
       toast.error(
-        "Network Error: Ensure Metamask is connected to the same network that your contract is deployed to."
+        "You are connected to a different network, please switch to Polygon testnet."
       );
     },
   }),
